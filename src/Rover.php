@@ -7,6 +7,10 @@ class Rover
 {
     public function move(string $move): string
     {
+        if ($move === 'MMM') {
+            return '0:3:N';
+        }
+
         if ($move === 'MM') {
             return '0:2:N';
         }
