@@ -19,4 +19,10 @@ class RoverTest extends TestCase
         $rover = new Rover();
         self::assertSame('0:1:N', $rover->move('M'));
     }
+
+    /** @test */
+    function given_two_command_forward_when_rover_is_in_landing_position_returns_0_2_N() {
+        $rover = new Rover();
+        self::assertSame('0:2:N', $rover->move('MM'));
+    }
 }
