@@ -1,9 +1,9 @@
 <?php
 namespace PhpKataSetup;
 
-class ChangeMe
+class Rover
 {
-    public function change(): bool
+    public function move(string $move): bool
     {
         return true;
     }
